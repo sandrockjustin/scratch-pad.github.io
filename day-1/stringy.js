@@ -124,15 +124,27 @@ function beginsWith(string, char) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
- * I:
- * O:
- * C:
- * E:
+ * I: Two arguments are received, with one being a string argument and another being string "character" argument
+ * O: A boolean datatype is returned if the first string argument ends with the character specified in the second string argument
+ * C: A boolean datatype must be returned
+ * E: The character argument cannot contain more than one character
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
+    if (string.[(string.length - 1)] === char) {
 
+        return true; // if the string argument ends with a character that is equal to the char argument, then return TRUE boolean
+
+    } else if (char.length > 1) {
+
+        return "Logic Error: second argument must be a single character." // if the char argument is not a single character, display logic error message
+
+    } else {
+
+        return false; // if the string argument is not equal to the char argument, then return FALSE boolean
+
+    }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -141,15 +153,15 @@ function endsWith(string, char) {
  * Given two input Strings, return the Strings concatenated into one.
  *
  * TIP: What's the operator to concatenate two Strings?
- * I:
- * O:
- * C:
- * E:
+ * I: Receives two string arguments for concatentation
+ * O: Returns the result of string arguments following their concatentation
+ * C: Arguments should both be strings
+ * E: Not applicable / unsure
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+        return stringOne + stringTwo; // simple concatenation using arithmetic operator
 
     // YOUR CODE ABOVE HERE //
 }
@@ -163,16 +175,15 @@ function concat(stringOne, stringTwo) {
  *
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
- * I:
- * O:
- * C:
- * E:
+ * I: Receives any number of strings
+ * O: Returns all of the received string arguments as one joined string
+ * C: Must return all strings as one string
+ * E: Not applicable / unsure
  */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
-
-
+    var args = Array.from(arguments); // included by default, created an array "args" from any string arguments
+    return args.join(""); // invokes the .join() array method to join all strings, returns result in this same line
     // YOUR CODE ABOVE HERE //
 }
 

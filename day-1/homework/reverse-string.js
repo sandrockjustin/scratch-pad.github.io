@@ -20,12 +20,31 @@
  */
 
 function reverseString(input) {
-    // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE GOES ABOVE HERE //
+
+  // YOUR CODE GOES BELOW HERE //
+
+  var reverseStringArray = []; // Establishes a temporary storage array for characters to be stored in reverse
+  let resultString = ""; // Establishes a variable to store string during concatentation
+
+  // Loops over string input and adds the characters, in reverse, to the reverseStringArray
+  for (var i = (input.length - 1); i >= 0; i--){
+
+    reverseStringArray.push(input[i]);
+
+  }
+
+  // Loops over reverseStringArray, adding and thereby concatentating each character to the resultString variable
+  for (var i = 0; i < reverseStringArray.length; i++){
+
+    resultString += reverseStringArray[i];
+
+  }
+  
+  return resultString; // Returns the string result, which should be the reversed version of the string argument
+
+  // A better version of this code would probably use the native toString() method or maybe even the concat() method. This one will suffice for our intents and purposes.
+  
+  // YOUR CODE GOES ABOVE HERE //
 }
 
 

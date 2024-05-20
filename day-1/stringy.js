@@ -195,15 +195,27 @@ function join(stringOne, stringTwo) {
  *      longest("ben", "maggie");   //-> "maggie"
  *
  * TIP: What property of the String do we need to compare?
- * I:
- * O:
- * C:
- * E:
+ * I: Two string arguments are received
+ * O: Returns the actual string that wins in a comparison operator
+ * C: Compares the .length property of two strings to determine which wins
+ * E: It is possible that the strings may be equal
  */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
+    if (stringOne.length > stringTwo.length) {
 
+        return stringOne; // Returns stringOne if it is longer than stringTwo.
+        
+    } else if (stringTwo.length > stringOne.length){
+
+        return stringTwo; // Returns stringTwo if it is longer than stringOne.
+
+    } else {
+
+        return "The strings are equal in length."; // Edge condition, acknowledges that strings could be equal to one another.
+
+    }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -214,18 +226,17 @@ function longest(stringOne, stringTwo) {
  * first, and return 0 if they're equal.
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
- * I:
- * O:
- * C:
- * E:
+ * I: Two string arguments are received.
+ * O: Returns 1, -1, or 0.
+ * C: If stringOne is alphabetically greater than stringTwo, return 1. If stringTwo is alphabetically greater than stringOne, return -1. 
+ * E: Possible that conditions are equal, in such case return 0.
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+    return stringTwo.localeCompare(stringOne); // uses the localeCompare() method to determine alphabetical hierarchy
     // YOUR CODE ABOVE HERE //
 }
+
 
 
 /**
@@ -234,16 +245,15 @@ function sortAscending(stringOne, stringTwo) {
  * first, and return 0 if they're equal.
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
- * I:
- * O:
- * C:
- * E:
+ * I: Two string arguments are received.
+ * O: Returns 1, -1, or 0.
+ * C: If stringTwo is alphabetically greater than stringOne, return 1. If stringOne is alphabetically greater than stringTwo, return -1. 
+ * E: Possible that conditions are equal, in such case return 0.
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
-
+    return stringOne.localeCompare(stringTwo); // uses the localeCompare() method to determine alphabetical hierarchy
 
     // YOUR CODE ABOVE HERE //
 }

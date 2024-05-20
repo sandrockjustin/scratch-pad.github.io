@@ -132,7 +132,7 @@ function beginsWith(string, char) {
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    if (string.[(string.length - 1)] === char) {
+    if (string[(string.length - 1)] === char) {
 
         return true; // if the string argument ends with a character that is equal to the char argument, then return TRUE boolean
 

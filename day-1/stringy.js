@@ -64,15 +64,15 @@ function toUpperCase(string) {
  *      methods split and join?
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
- * I:
- * O:
- * C:
- * E:
+ * I: The function takes a string argument
+ * O: The output should generate the same string argument, with each whitespace replaced with a dash
+ * C: All whitespace should be replaced with a dash "-"
+ * E: Individual characters should not be separated by a "-"
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
 
-
+    return string.replaceAll(" ", "-"); // searches for whitespace, replaces with a dash "-"
 
     // YOUR CODE ABOVE HERE //
 }
@@ -88,15 +88,27 @@ function toDashCase(string) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
- * I:
- * O:
- * C:
- * E:
+ * I: Two arguments are received, with one being a string argument and another being string "character" argument
+ * O: A boolean datatype is returned if the first string argument begins with the character specified in the second string argument
+ * C: A boolean datatype must be returned
+ * E: The character argument cannot contain more than one character
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    
+    if (string[0] === char) {
+
+        return true; // if the string argument is equal to the char argument, then return TRUE boolean
+
+    } else if (char.length > 1) {
+
+        return "Logic Error: second argument must be a single character." // if the char argument is not a single character, display logic error message
+
+    } else {
+
+        return false; // if the string argument is not equal to the char argument, then return FALSE boolean
+
+    }
 
     // YOUR CODE ABOVE HERE //
 }

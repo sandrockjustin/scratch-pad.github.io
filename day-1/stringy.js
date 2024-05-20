@@ -138,7 +138,7 @@ function endsWith(string, char) {
 
     } else if (char.length > 1) {
 
-        return "Logic Error: second argument must be a single character." // if the char argument is not a single character, display logic error message
+        return "Logic Error: second argument must be a single character."; // if the char argument is not a single character, display logic error message
 
     } else {
 

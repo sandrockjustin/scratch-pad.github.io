@@ -12,7 +12,7 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-    for (var i = 0; i <= 100; i++){
+    for (var i = 1; i <= 100; i++){
 
         // double conditional expression must come first or other code block might incorrectly execute
         if ((i % 5 === 0) && (i % 3 === 0)) {

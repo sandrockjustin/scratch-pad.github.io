@@ -72,9 +72,13 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
+  var newArray = [];
+
+  for (var key in object){
+    newArray.push(object.key);
+  }
   
-  
-  
+  return newArray; 
   
   // YOUR CODE ABOVE HERE //
 }

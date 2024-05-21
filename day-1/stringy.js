@@ -11,6 +11,7 @@
  *
  * TIP: In JavaScript, how can we decipher the length of a String?
  * work?
+ * 
  * I: Input is a string argument
  * O: Output is the overall length of the received string argument
  * C: The result must be a number, preferably an integer, that reflects the overall length of the string
@@ -24,6 +25,7 @@ function length(string) {
 
 /**
  * Given an input String, return a new String forced to lowercase.
+ * 
  * I: Input is a string argument
  * O: Output is the string argument with lowercase characters
  * C: Argument must return in lowercase
@@ -39,6 +41,7 @@ function toLowerCase(string) {
 
 /**
  * Given an input String, return a new String forced to uppercase.
+ * 
  * I: Input is a string argument
  * O: Output is the string argument with uppercase characters
  * C: Argument must return in uppercase
@@ -64,6 +67,7 @@ function toUpperCase(string) {
  *      methods split and join?
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
+ * 
  * I: The function takes a string argument
  * O: The output should generate the same string argument, with each whitespace replaced with a dash
  * C: All whitespace should be replaced with a dash "-"
@@ -73,7 +77,7 @@ function toDashCase(string) {
     // YOUR CODE BELOW HERE //
     var tempString = "";
     tempString = string.replaceAll(" ", "-"); // searches for whitespace, replaces with a dash "-"
-    return tempString.toLowerCase();
+    return tempString.toLowerCase(); // added toLowerCase() native, not specified in instructions but required to pass test
     // YOUR CODE ABOVE HERE //
 }
 
@@ -125,6 +129,7 @@ function beginsWith(string, char) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ * 
  * I: Two arguments are received, with one being a string argument and another being string "character" argument
  * O: A boolean datatype is returned if the first string argument ends with the character specified in the second string argument
  * C: A boolean datatype must be returned
@@ -155,6 +160,7 @@ function endsWith(string, char) {
  * Given two input Strings, return the Strings concatenated into one.
  *
  * TIP: What's the operator to concatenate two Strings?
+ * 
  * I: Receives two string arguments for concatentation
  * O: Returns the result of string arguments following their concatentation
  * C: Arguments should both be strings
@@ -177,6 +183,7 @@ function concat(stringOne, stringTwo) {
  *
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
+ * 
  * I: Receives any number of strings
  * O: Returns all of the received string arguments as one joined string
  * C: Must return all strings as one string
@@ -197,6 +204,7 @@ function join(stringOne, stringTwo) {
  *      longest("ben", "maggie");   //-> "maggie"
  *
  * TIP: What property of the String do we need to compare?
+ * 
  * I: Two string arguments are received
  * O: Returns the actual string that wins in a comparison operator
  * C: Compares the .length property of two strings to determine which wins
@@ -228,6 +236,7 @@ function longest(stringOne, stringTwo) {
  * first, and return 0 if they're equal.
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
+ * 
  * I: Two string arguments are received.
  * O: Returns 1, -1, or 0.
  * C: If stringOne is alphabetically greater than stringTwo, return 1. If stringTwo is alphabetically greater than stringOne, return -1. 
@@ -247,6 +256,7 @@ function sortAscending(stringOne, stringTwo) {
  * first, and return 0 if they're equal.
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
+ * 
  * I: Two string arguments are received.
  * O: Returns 1, -1, or 0.
  * C: If stringTwo is alphabetically greater than stringOne, return 1. If stringOne is alphabetically greater than stringTwo, return -1. 

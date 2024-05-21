@@ -14,18 +14,22 @@ function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
     for (var i = 0; i <= 100; i++){
 
+        // double conditional expression must come first or other code block might incorrectly execute
         if ((i % 5 === 0) && (i % 3 === 0)) {
 
             console.log("FizzBuzz");
-
+        
+        // checks to see if number i is a multiple of 5
         } else if (i % 5 === 0) {
 
             console.log("Buzz");
-
+        
+        // checks to see if number i is a multiple of 3
         } else if (i % 3 === 0) {
 
             console.log("Fizz");
 
+        // if none of the aforementioned expressions are true, then simply print i to console
         } else {
 
             console.log(i);

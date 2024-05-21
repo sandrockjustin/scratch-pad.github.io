@@ -88,15 +88,28 @@ function toDashCase(string) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ * 
  * I: Two arguments are received, with one being a string argument and another being string "character" argument
  * O: A boolean datatype is returned if the first string argument begins with the character specified in the second string argument
  * C: A boolean datatype must be returned
- * E: The character argument cannot contain more than one character
+ * E: The character argument cannot contain more than one character, AND MUST BE IN LOWERCASE
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    string.startsWith(char);
+    if (string.toLowerCase([0]) === char.toLowerCase()) {
+
+        return true; // if the string argument is equal to the char argument, then return TRUE boolean
+
+    } else if (char.length > 1) {
+
+        return "Logic Error: second argument must be a single character." // if the char argument is not a single character, display logic error message
+
+    } else {
+
+        return false; // if the string argument is not equal to the char argument, then return FALSE boolean
+
+    }
 
     // YOUR CODE ABOVE HERE //
 }

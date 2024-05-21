@@ -124,9 +124,18 @@ function getObjectLength(object) {
  */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
+
+  var newArray = [];
+
+  for (var key in object){
+    newArray.push(object[key]);
+  }
   
-  
-  
+  for (var i = newArray.length - 1; i >= 0; i-- ){
+
+    console.log(newArray[i]);
+
+  }
   
   // YOUR CODE ABOVE HERE //
 }

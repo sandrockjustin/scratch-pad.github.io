@@ -43,7 +43,7 @@ function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   var newArray = [];
 
-  for (var key in object)){
+  for (var key in object){
     newArray.push(key);
   }
   

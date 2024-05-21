@@ -97,7 +97,7 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    if (string.toLowerCase([0]) === char.toLowerCase()) {
+    if (string[0].toLowerCase() === char.toLowerCase()) {
 
         return true; // if the string argument is equal to the char argument, then return TRUE boolean
 

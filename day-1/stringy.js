@@ -100,10 +100,6 @@ function beginsWith(string, char) {
 
         return true; // if the string argument is equal to the char argument, then return TRUE boolean
 
-    } else if (char.length > 1) {
-
-        return "Logic Error: second argument must be a single character." // if the char argument is not a single character, display logic error message
-
     } else {
 
         return false; // if the string argument is not equal to the char argument, then return FALSE boolean

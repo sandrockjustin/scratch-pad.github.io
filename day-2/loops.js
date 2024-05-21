@@ -106,9 +106,14 @@ function printObjectValues(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
+
+  var newArray = [];
+
+  for (var key in object){
+    newArray.push(key);
+  }
   
-  
-  
+  return newArray.length;
   
   // YOUR CODE ABOVE HERE //
 }

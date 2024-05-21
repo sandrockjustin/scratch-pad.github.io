@@ -71,9 +71,9 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-    return string.replaceAll(" ", "-"); // searches for whitespace, replaces with a dash "-"
-
+    var tempString = "";
+    tempString = string.replaceAll(" ", "-"); // searches for whitespace, replaces with a dash "-"
+    return tempString.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
 
@@ -133,6 +133,7 @@ function beginsWith(string, char) {
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
+    // toLowerCase must be used to ensure that the same ASCII is being compared
     if (string[(string.length - 1)].toLowerCase() === char.toLowerCase()) {
 
         return true; // if the string argument ends with a character that is equal to the char argument, then return TRUE boolean

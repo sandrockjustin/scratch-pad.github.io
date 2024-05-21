@@ -96,15 +96,7 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    if (string[0] === char) {
-
-        return true; // if the string argument is equal to the char argument, then return TRUE boolean
-
-    } else {
-
-        return false; // if the string argument is not equal to the char argument, then return FALSE boolean
-
-    }
+    string.startsWith(char);
 
     // YOUR CODE ABOVE HERE //
 }

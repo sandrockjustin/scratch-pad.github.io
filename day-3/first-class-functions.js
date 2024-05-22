@@ -50,7 +50,7 @@ function createStartsWithFilter(startsWith) {
     
     return function(str){
 
-        return (str[0] === startsWith[0]);
+        return (str[0] === startsWith);
 
     }
     
@@ -64,13 +64,13 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
-    return function(str){
+    if (endsWith.length === 1) {
+        return function(str){
 
-        return (str[str.length - 1] === endsWith);
+            return (str[str.length - 1] === endsWith);
 
+        }
     }
-    
     // YOUR CODE ABOVE HERE //
 }
 

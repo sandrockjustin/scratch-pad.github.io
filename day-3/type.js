@@ -18,7 +18,7 @@ function isArray(value) {
     // YOUR CODE BELOW HERE //
     
     
-    
+    return Array.isArray(value);
     
     // YOUR CODE ABOVE HERE //
 }
@@ -35,8 +35,15 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
+    if (typeof value === "object"){
 
-    
+        return true;
+
+    } else {
+
+        return false;
+
+    }
     
     // YOUR CODE ABOVE HERE //
 }

@@ -84,7 +84,11 @@ function createEndsWithFilter(endsWith) {
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
     
-    
+    for (var i = 0; i < strings.length; i++){
+
+        modify(strings[i]);
+
+    }
     
     
     // YOUR CODE ABOVE HERE //

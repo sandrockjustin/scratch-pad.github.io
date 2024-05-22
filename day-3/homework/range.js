@@ -26,12 +26,24 @@ function range(start, end) {
     
     var tempArray = [];
 
-    for (start - 1; start <= end; start++) {
+    if (start < end) {
 
-        tempArray.push(start);
+        for (start - 1; start <= end; start++) {
+
+            tempArray.push(start);
+
+        }
+
+    } else {
+
+        for (start + 1; start >= end; start--) {
+
+            tempArray.push(start);
+
+        }
 
     }
-    
+
     return tempArray;
     // YOUR CODE GOES ABOVE HERE //
 }

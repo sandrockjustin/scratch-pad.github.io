@@ -54,7 +54,6 @@ function createStartsWithFilter(startsWith) {
 
     }
     
-    
     // YOUR CODE ABOVE HERE //
 }
 

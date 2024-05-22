@@ -93,7 +93,7 @@ function modifyStrings(strings, modify) {
     }
     
     return tempArray; 
-    
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -111,8 +111,18 @@ function modifyStrings(strings, modify) {
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
     
-    
-    
+    new booleanArray = [];
+
+    for (var i = 0; i < strings.length; i++){
+
+        if (test(strings[i]) !== true) {
+
+            return false;
+
+        }
+    }
+
+    return true;
     
     // YOUR CODE ABOVE HERE //
 }

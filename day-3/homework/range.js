@@ -24,7 +24,13 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
-    
+    var tempArray = [];
+
+    for (start - 1; start <= end; start++) {
+
+        tempArray.push(start);
+
+    }
     
     
     // YOUR CODE GOES ABOVE HERE //

@@ -84,12 +84,15 @@ function createEndsWithFilter(endsWith) {
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
     
+    var tempArray = [];
+
     for (var i = 0; i < strings.length; i++){
 
-        modify(strings[i]);
+        tempArray.push(modify(strings[i]));
 
     }
     
+    return tempArray; 
     
     // YOUR CODE ABOVE HERE //
 }

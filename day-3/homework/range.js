@@ -32,7 +32,7 @@ function range(start, end) {
 
     }
     
-    
+    return tempArray;
     // YOUR CODE GOES ABOVE HERE //
 }
 

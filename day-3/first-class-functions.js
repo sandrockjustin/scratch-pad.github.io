@@ -110,8 +110,6 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    new booleanArray = [];
 
     for (var i = 0; i < strings.length; i++){
 

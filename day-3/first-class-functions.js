@@ -50,7 +50,7 @@ function createStartsWithFilter(startsWith) {
     
     return function(word){
 
-        return (word[0] === startsWith)
+        return (word[0] === startsWith);
 
     }
     

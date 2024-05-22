@@ -59,8 +59,19 @@ function isObject(value) {
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     
-    
-    
+    if ((Array.isArray(value) === true) && (value !== null) && !(value instanceof Date)){
+
+        return true;
+
+    } else if ((typeof value === "object") && (value !== null) && !(value instanceof Date)){
+
+        return true;
+
+    } else {
+
+        return false;
+
+    }
     
     // YOUR CODE ABOVE HERE //
 }

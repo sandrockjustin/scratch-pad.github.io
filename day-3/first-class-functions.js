@@ -50,7 +50,7 @@ function createStartsWithFilter(startsWith) {
     
     return function(str){
 
-        return (str[0].toLowerCase() === startsWith);
+        return (str[0].toLowerCase() === startsWith.toLowerCase());
 
     }
     
@@ -67,7 +67,7 @@ function createEndsWithFilter(endsWith) {
     
     return function(str){
 
-        return (str[str.length - 1].toLowerCase() === endsWith);
+        return (str[str.length - 1].toLowerCase() === endsWith.toLowerCase());
 
     }
     

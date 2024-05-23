@@ -38,6 +38,7 @@ function makeContact(id, nameFirst, nameLast) {
     
     var contact = {
 
+        // The keys can have the same parameter names, because the keys are actually "strings" and will not inherit the arguments.
         id: id,
         nameFirst: nameFirst,
         nameLast: nameLast

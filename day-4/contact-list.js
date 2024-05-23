@@ -88,6 +88,19 @@ function makeContactList() {
         },
         printAllContactNames: function(){
 
+            // loop over every index
+            // grab nameFirst and nameLast, add nameFirst + " " + nameLast + "\n" to a string variable
+            // return string variable
+            var contactString = "";
+
+            for (var i = 0; i < contacts.length; i++){
+
+                contactString += (contacts[i]["nameFirst"] + " " + contacts[i]["nameLast"] + "\n")
+
+            }
+
+            return contactString;
+            
         }
     }
 }

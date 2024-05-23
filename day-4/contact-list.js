@@ -93,14 +93,16 @@ function makeContactList() {
             // return string variable
             var contactString = "";
 
-            for (var i = 0; i < contacts.length; i++){
+            for (var i = 0; i < contacts.length - 1; i++){
 
                 contactString += (contacts[i]["nameFirst"] + " " + contacts[i]["nameLast"] + "\n")
 
             }
 
+            contactString += (contacts[contacts.length - 1]["nameFirst"]) + " " + (contacts[contacts.length - 1]["nameLast"]);
+
             return contactString;
-            
+
         }
     }
 }

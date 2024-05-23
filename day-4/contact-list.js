@@ -66,11 +66,11 @@ function makeContactList() {
         },
         findContact: function(fullName){
             var words = fullName.split(" ");
-            var firstName = words[0];
-            var lastName = words[1];
+            var nameFirst = words[0];
+            var nameLast = words[1];
 
             for (var i = 0; i < contacts.length; i++){
-                if ((contacts[i]["firstName"] === firstName) && (contacts[i]["lastName"] === lastName)) {
+                if ((contacts[i]["nameFirst"] === nameFirst) && (contacts[i]["nameLast"] === nameLast)) {
                     return contacts[i];
                 } else {
                     return undefined;

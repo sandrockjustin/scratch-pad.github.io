@@ -53,12 +53,35 @@ function makeContactList() {
     /*
      * You need something here to hold contacts. See length api for a hint:
      */
-    var contacts;
-    
+    var contacts = [];
+
     return {
         // we implemented the length api for you //
         length: function() {
             return contacts.length;
+        }, 
+        addContact: function(contact){
+            contacts.push(contact);
+            return contacts;
+        },
+        findContact: function(fullName){
+            var words = fullName.split(" ");
+            var firstName = words[0];
+            var lastName = words[1];
+
+            for (var i = 0; i < contacts.length; i++){
+                if ((contacts[i]["firstName"] === firstName) && (contacts[i]["lastName"] === lastName)) {
+                    return contacts[i];
+                } else {
+                    return undefined;
+                }
+            }
+        },
+        removeContact: function(contact){
+
+        },
+        printAllContactNames: function(){
+
         }
     }
 }

@@ -78,7 +78,13 @@ function makeContactList() {
             }
         },
         removeContact: function(contact){
+            for (var i = 0; i < contacts.length; i++) {
+                if (contacts[i] === contact) {
+                    contacts.splice (contact[i], 1);
+                }
+            }
 
+            return contacts;
         },
         printAllContactNames: function(){
 
